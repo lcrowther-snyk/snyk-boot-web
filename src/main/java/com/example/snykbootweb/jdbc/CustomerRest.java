@@ -26,7 +26,7 @@ public class CustomerRest {
 
     @GetMapping(produces = "application/json", path = "/all/{lastName}")
     public List<Customer> getAllCustomersByLastName(@PathVariable String lastName) {
-        return customerService.getAllByLastName( lastName);
+        return customerService.getAllByLastName(lastName);
     }
 
 
